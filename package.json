@@ -1,6 +1,8 @@
 {
+
   "name": "agriculture-app",
   "version": "0.1.0",
+  "homepage": "https://ninjaWC.github.io/diploma",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
