@@ -1,0 +1,10 @@
+@import '../fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css';
+* {
+  list-style: none;
+}
+body {
+  margin: 0 auto;
+  background-color: rgba(233, 236, 239, 1);
+  font-family: 'Satoshi-Variable';
+  box-sizing: border-box;
+}

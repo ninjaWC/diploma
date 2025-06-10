@@ -1,0 +1,484 @@
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 25px;
+}
+.blur {
+  background-color: rgba(163, 177, 138, 0.1);
+  backdrop-filter: blur(10px);
+}
+.title{
+  font-size: 16px;
+  font-weight: 500;
+}
+.bora{
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0px;
+}
+
+
+main {
+  padding-top: 50px;
+
+  position: relative;
+}
+
+.header {
+  max-width: 66px;
+  position: sticky;
+  padding: 10px 0px 0px 0px;
+}
+.header__inner {
+  height: 100vh;
+}
+
+.header__navigation {
+  margin-bottom: 250px;
+}
+.header__navigation,
+.header__profile-settings,
+.header__profile-links {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10px 11px;
+}
+
+.header__navigation-links,
+.header__profile-settings {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  transition: all .3s;
+}
+.header__navigation-links:hover,
+.header__profile-links:hover {
+  background-color: rgba(163, 177, 138, 0.2);
+  border-radius: 10px;
+}
+.header__profile-links:last-child {
+  list-style: none;
+  display: block;
+  
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.header__profile-links {
+  transition: all .3s;
+}
+
+.greenhouse {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.greenhouse__cam {
+  width: 961px;
+  min-height: 400px;
+  padding: 40px 0px ;
+
+  background: url('../assets/main/image/camera-1.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.greenhouse__cam-navigation {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+}
+.greenhouse__cam-navigation-links {
+  font-size: 14px;
+  color: #fff;
+  border-radius: 15px;
+
+
+  display: flex;
+  padding: 7px ;
+}
+
+.greenhouse__cam-navigation-links li {
+  padding: 10px;
+  border-radius: 10px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.greenhouse__cam-navigation-links li:hover {
+  background-color: rgba(1, 2, 2, 0.2);
+}
+
+.greenhouse__cam-navigation-links li:nth-child(2) {
+  margin: 0px 18px;
+  
+}
+.greenhouse__cam-navigation-zoom {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  
+  width: 50px;
+  height: 40px;
+
+  
+}
+.greenhouse__cam-navigation-zoom button {
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+
+
+  border: 0px solid #fff;
+}
+
+.greenhouse__cam-bottom {
+  padding: 0px 65px;
+}
+.greenhouse__cam-bottom-title {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.greenhouse__cam-bottom-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.cam-bottom-navigation__option {
+}
+.option-settings ,
+.option-overview ,
+.option-time{
+  text-align: center;
+  display: inline-block;
+  padding: 14px;
+
+  border-radius: 10px;
+}
+.option-overview,
+.option-time {
+  background-color: #fff;
+  margin: 0px 10px;
+
+  display: inline-flex;
+  gap: 10px;
+}
+.option-overview {
+  margin-right: 0px;
+}
+.option-time {}
+.option-date {
+  color: #fff;
+}
+.cam-bottom-navigation__camera {
+  display: flex;
+  align-items: center;
+}
+.cam-bottom-navigation__camera span {
+  /* display: inline-block; */
+  padding: 10px;
+  margin-right: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+
+.greenhouse__panels {
+  background-color: #fff;
+  width: 290px;
+  min-height: 400px;
+  padding: 30px;
+
+  border-radius: 10px;
+}
+.greenhouse__panels-top {
+  display: flex;
+  justify-content: space-between;
+
+}
+.greenhouse__panels-title {
+  font-size: 16px;
+}
+.greenhouse__panels-button button{
+  width: 24px;
+  height: 24px;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgba(234, 240, 232, 1);
+}
+.greenhouse__panels-settings {
+}
+.settings__nav {
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 10px 0px;
+  margin: 20px 0px;
+  font-size: 12px;
+  
+  background-color: rgba(163, 177, 138, 0.6);
+  border-radius: 10px;
+}
+.settings__nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+
+  transition: background-color .3s;
+}
+.settings__nav-links a:hover{
+  background-color: #fff;
+  color: #333;
+}
+
+.settings__options {
+  border-radius: 10px;
+  background-color: rgba(234, 240, 232, 1);
+  padding: 10px 20px;
+}
+.settings__options-control {
+  margin: 22px 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.settings__options-control:hover {
+  background-color: #fff;
+}
+.control-name {}
+.mode {
+  color: rgba(146, 145, 151, 1);
+}
+
+.dashboard-overview { 
+  display: flex;
+  gap: 20px;
+}
+.dashboard-overview__weather {}
+.weather-today {
+  background-color: #fff;
+  padding: 25px 20px;
+
+  margin-bottom: 25px;
+}
+.weather-today__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.weather-today__top-title,
+.weather-today__top-option {
+  display: inline-block;  
+  
+}
+.weather-today__top-option button,
+.weather-forecast-button button {
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(218, 215, 205, 0.6);
+  border-radius: 10px;
+
+  border: 0px;
+}
+.weather-today__bottom {
+  display: flex;
+  gap: 10px;
+}
+.weather-today__bottom-now { 
+  background-color: rgba(88, 150, 245, 1);
+  color: #fff;
+  
+}
+
+.weather-today__bottom-now,
+.weather-today__bottom-later {
+  padding: 10px;
+}
+.bottom-later__date {
+}
+.bottom-later__temp span,
+.bottom-later__wind-speed span {
+  display: inline-block;
+  margin-right: 15px;
+}
+.bottom-later__temp {
+  margin: 10px 0px;
+}
+.bottom-later__wind-speed {
+}
+.weather-today__bottom-later {
+  margin: 0px 15px;
+}
+.weather-today__bottom-next {
+  display: flex;
+  align-items: center;
+
+  padding: 0px 10px;
+  background-color: rgba(218, 215, 205, 0.6);
+  border-radius: 10px;
+}
+
+.weather-forecast {
+  background-color: #fff;
+  padding: 25px 20px ;
+}
+.weather-forecast-top {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-forecast-title {}
+.weather-forecast-button {
+}
+.weather-forecast__settings {
+}
+.settings__nav {
+}
+.settings__nav-links {
+}
+.weather-forecast__module {
+}
+.weather-forecast__module-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather-forecast__module-data-day,
+.weather-forecast__module-data-speed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-forecast__module-data-temp {
+  display: flex;
+  align-items: center;
+}
+.module-data-temp__block { 
+}
+.weather-forecast__module-data-temp span {
+  margin-right: 7px;
+}
+.weather-forecast__module-data-temp span,
+.module-data-temp__block span { 
+  display: block;
+  font-size: 12px;
+  color: rgba(146, 145, 151, 1);
+}
+.weather-forecast__module-data-speed { 
+  color: rgba(146, 145, 151, 1);
+  
+}
+
+.dashboard-overview__fields {
+  width: 623px;
+  min-height: 100%;
+}
+
+.dashboard-overview__equipment-status { 
+  width: 292px;
+  min-height: 100%;
+}
+
+.dashboard-overview__fields {
+  padding: 24px;
+  border: 0px;
+
+  height: 400px;  
+  max-width: 570px;
+}
+.dashboard-overview__fields-top {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard-overview__fields-top-title {
+
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(59, 130, 246, 1); 
+}
+.dashboard-overview__fields-bottom {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  
+}
+.dashboard-overview__fields-bottom-table {
+}
+.dashboard-overview__fields-bottom-graph {
+}
+th {
+  color: rgba(115, 115, 115, 1);
+}
+td,
+th { 
+  padding: 0.5rem 2rem;
+}
+
+.dashboard-overview__equipment-status {
+  padding: 24px;
+}
+
+.dashboard-overview__equipment-status-top {
+  display: flex;
+  justify-content: space-between;
+
+}
+.dashboard-overview__equipment-status-top-title {
+}
+
+.dashboard-overview__equipment-status-top-link {
+}
+
+.dashboard-overview__equipment-status-chart {
+  margin: 80px 0px 20px 0px ;
+  text-align: center;
+}
+.dashboard-overview__equipment-status-bottom {
+
+}
+.bottom__table-title {
+  color: rgba(115, 115, 115, 1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(115, 115, 115, 1);
+}
+.bottom__table-data {
+}
+.bottom__table-data-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.todo {
+}
+.progress {
+}
+.done {
+}
