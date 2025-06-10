@@ -1,0 +1,39 @@
+.footer {
+  background: #2b3a55;
+  color: #fff;
+  padding: 24px 0 18px 0;
+  font-family: "Bebas Neue", sans-serif;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.footerNav {
+  display: flex;
+  gap: 24px;
+}
+
+.footerLink {
+  color: #f5f7fa;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+
+.footerLink:hover {
+  color: #ffb703;
+}
+
+.copyright {
+  font-size: 1rem;
+  opacity: 0.85;
+}

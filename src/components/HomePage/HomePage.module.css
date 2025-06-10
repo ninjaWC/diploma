@@ -1,0 +1,101 @@
+.home {
+  padding: 40px 20px;
+  background: #fff;
+  min-height: 80vh;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  width: 1400px;
+  /* height: 100%; */
+}
+
+.welcomeBlock {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2b3a55;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4f5d75;
+  margin-top: 12px;
+}
+
+.infoBlock {
+  /* background: #fff; */
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.infoTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #2b3a55;
+  text-align: center;
+}
+
+.featuresList {
+  list-style: disc inside;
+  margin-bottom: 20px;
+  color: #22223b;
+  font-size: 1.5rem;
+}
+
+.infoText {
+  color: #4f5d75;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.featuresGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+  padding: 20px 0px;
+}
+
+.featureCard {
+  background: #f5f7fa;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(43, 58, 85, 0.07);
+  padding: 24px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 260px;
+  min-height: 120px;
+  transition: box-shadow 0.2s;
+}
+
+.featureCard:hover {
+  box-shadow: 0 4px 16px rgba(43, 58, 85, 0.13);
+}
+
+.featureIcon {
+  font-size: 2.2rem;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.featureTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  color: #2b3a55;
+}
+
+.featureDesc {
+  font-size: 0.98rem;
+  color: #4f5d75;
+  margin: 0;
+}
